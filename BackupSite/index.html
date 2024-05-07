@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    body {
+      width: 100%;
+      min-height: 100vh;
+      background-color: black;
+      margin: 0;
+      padding: 0;
+      font-family: Verdana;
+    }
+
+    .container {
+      width: 100%;
+      margin: auto;
+      display: flex;
+    }
+
+    .container .headerImagem {
+      margin-left: 2%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .header {
+      background-color: black;
+    }
+
+    .titulo {
+      color: white;
+      font-size: large;
+    }
+
+    .navbar {
+      width: 400px;
+      display: flex;
+      color: white;
+      justify-content: center;
+      list-style: none;
+      align-items: center;
+    }
+
+    .header .container {
+      gap: 60%;
+    }
+
+    .header .container ul {
+      justify-content: space-between;
+    }
+
+    .linkHeader {
+      color: white;
+      font-size: 12px;
+      list-style: none;
+      text-decoration: none;
+    }
+
+    .kodfun-galeri {
+      display: flex;
+      height: 20rem;
+      gap: 1rem;
+    }
+
+    .kodfun-galeri>div {
+      flex: 1;
+      border-radius: 1rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      transition: all 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+    }
+
+    .kodfun-galeri>div:hover {
+      flex: 5;
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: "Arial";
+      box-sizing: border-box;
+    }
+
+    section {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      background-color: black;
+    }
+
+    section div.background-section {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 0;
+    }
+
+    section div.background-section video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      filter: brightness(30%);
+    }
+
+    section div.box {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2%;
+    }
+
+    section div.box div.conteudo {
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    section div.box p {
+      color: white;
+      font-size: 20px;
+      line-height: 32px;
+    }
+
+    section div.box h1 {
+      color: white;
+      font-size: 60px;
+      line-height: 62px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="headerImagem">
+        <img src="imagens/Vintage Fitness Concept (1) (1) 1.png" alt="" height="80px" />
+        <h1 class="titulo">BuildingTech</h1>
+      </div>
+      <ul class="navbar">
+        <li><a href="index.html" class="linkHeader">Inicial</a></li>
+        <li><a href="" class="linkHeader">Sobre Mim</a></li>
+        <li><a href="login.html" class="linkHeader">Login</a></li>
+        <li><a href="cadastro.html" class="linkHeader">Cadastro</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  <section>
+    <div class="background-section">
+      <video src="Videos/Arnold Schwarzenegger Bodybuilding Training Motivation - No Pain No Gain _ 2024.mp4" autoplay
+        loop muted></video>
+    </div>
+    <div class="box">
+      <div class="conteudo">
+        <h1>BuildingTech</h1> <br>
+        <p>
+          Você tem três escolhas na vida: desistir, ceder ou dar o melhor de
+          si.
+        </p>
+      </div>
+    </div>
+  </section>
+  <div class="kodfun-galeri">
+    <div style="background-image: url(imagens/Foto\ arnold.jpg)"></div>
+    <div style="background-image: url(imagens/Jay\ Cutler\ Mr_\ OLYMPIA\ 1.png)"></div>
+    <div style="
+          background-image: url(imagens/Mr\ Olympia\ 2022\ Classic\ physique.jpg);
+        "></div>
+    <div style="background-image: url(imagens/Ronnie\ Coleman.jpg)"></div>
+    <div style="background-image: url(imagens/Saúde\ Do\ Corpo\ 1.png)"></div>
+  </div>
+</body>
+
+</html>
