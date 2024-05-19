@@ -1,0 +1,202 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+  }
+
+  .container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+  }
+
+  .container .headerImagem {
+    margin-left: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .header {
+    background-color: black;
+  }
+
+  .titulo {
+    color: white;
+    font-size: large;
+  }
+
+  .navbar {
+    width: 400px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+  }
+
+  .header .container {
+    gap: 60%;
+  }
+
+  .header .container ul {
+    justify-content: space-between;
+  }
+
+  .linkHeader {
+    color: white;
+    font-size: 12px;
+    list-style: none;
+    text-decoration: none;
+  }
+
+
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: "Arial";
+    box-sizing: border-box;
+  }
+
+  section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: black;
+  }
+
+  section div.background-section {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+  }
+
+  section div.background-section video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(30%);
+  }
+
+  section div.box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+  }
+
+  section div.box div.conteudo {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  section div.box p {
+    color: white;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  section div.box h1 {
+    color: white;
+    font-size: 60px;
+    line-height: 62px;
+  }
+
+.o_que_é_fisiculturismo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5%;
+    color: white;
+}
+.o_que_é_fisiculturismo img{
+    height: 400px;
+    width: 270px;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto p{
+    display: flex;
+    text-align: center;
+}
+
+/* .categorias{
+    display: flex;
+} */
+
+.botões_categorias{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.botões_categorias button{
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border-style: none;
+    height: 50px;
+    font-size: larger;
+}
+
+.conteudo_categorias h1{
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5%;
+}
+.conteudo_categorias{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 5%;
+}
+.conteudo_categorias img{
+    height: 300px;
+}
+
+.conteudo_categorias p{
+    color: white;
+    text-align: center;
+    display: flex;
+    padding: 5%;
+}
+
+/* teste */
+
+.exercicio {
+    display: flex;
+    width: 100%px;
+    height: 30px;
+    padding: 10px;
+    margin: 5px;
+    border: solid 1px #000;
+    color: white;
+  }
+  
+  .esconder-exercicio {
+    display: none;
+  }
