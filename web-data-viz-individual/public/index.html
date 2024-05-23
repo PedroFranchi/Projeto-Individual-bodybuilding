@@ -51,8 +51,8 @@
   </div>
 
   <div class="botões_categorias">
-    <button onclick="mudarExercicios()">Mr. Olympia</button>
-    <button onclick="mudarExercicios()">Classic Physique</button>
+    <button onclick="mrOlympia()">Mr. Olympia</button>
+    <button onclick="classicPhysique()">Classic Physique</button>
     <button onclick="mudarExercicios()">Open Bodybuilding</button>
     <button onclick="mudarExercicios()">Men's Physique</button>
   </div>
@@ -73,10 +73,38 @@
     <div class="texto">
       <h1 id="h1_titulo_categoria">Mr. Olympia <br> O Maior Campeonato de Fisiculturismo do Mundo</h1>
       <p>
-        Com o passar dos anos houve um grande aumento muscular dos atletas causando uma notável diferenciação dos atletas em relação aos físicos dos anos iniciais, em busca da retomada dos físicos "clássicos", foi criada a categoria Classic Physique, em que existem faixas de peso correspondentes a altura dos atletas que não devem ser ultrapassadas, para que com isso seja buscado um físico mais estético e harmonioso
+        Com o passar dos anos houve um grande aumento muscular dos atletas causando uma notável diferenciação dos
+        atletas em relação aos físicos dos anos iniciais, em busca da retomada dos físicos "clássicos", foi criada a
+        categoria Classic Physique, em que existem faixas de peso correspondentes a altura dos atletas que não devem ser
+        ultrapassadas, para que com isso seja buscado um físico mais estético e harmonioso
       </p>
     </div>
     <img src="imagens/O ano mais brasileiro do fisiculturismo_ 2022 pode transformar o cenário_ 1.png" alt="Ramon Dino">
+  </div>
+  <div id="div_openBoryBuilding" class="conteudo_categorias esconder-exercicio">
+    <div class="texto">
+      <h1 id="h1_titulo_categoria">Mr. Olympia <br> O Maior Campeonato de Fisiculturismo do Mundo</h1>
+      <p>
+        Com o passar dos anos houve um grande aumento muscular dos atletas causando uma notável diferenciação dos
+        atletas em relação aos físicos dos anos iniciais, em busca da retomada dos físicos "clássicos", foi criada a
+        categoria Classic Physique, em que existem faixas de peso correspondentes a altura dos atletas que não devem ser
+        ultrapassadas, para que com isso seja buscado um físico mais estético e harmonioso
+      </p>
+    </div>
+    <img src="imagens/Phenq reviews and results_ Is Phenq safe_ Complete Guide 1.png" alt="Rafael Brandão">
+  </div>
+  <div id="div_mensPhysique" class="conteudo_categorias esconder-exercicio">
+    <div class="texto">
+      <h1 id="h1_titulo_categoria">Mr. Olympia <br> O Maior Campeonato de Fisiculturismo do Mundo</h1>
+      <p>
+        Com o passar dos anos houve um grande aumento muscular dos atletas causando uma notável diferenciação dos
+        atletas em relação aos físicos dos anos iniciais, em busca da retomada dos físicos "clássicos", foi criada a
+        categoria Classic Physique, em que existem faixas de peso correspondentes a altura dos atletas que não devem ser
+        ultrapassadas, para que com isso seja buscado um físico mais estético e harmonioso
+      </p>
+    </div>
+    <img src="imagens/Snapinsta.app_336235616_768742484542681_4629490933350852489_n_1080-1-e1683132906338 1.png "
+      alt="Diogo Montenegro">
   </div>
 
   <!-- <div id="exercicio1e2" class="exercicio">Olá, sou o elemento exercicio1e2</div>
@@ -92,11 +120,14 @@
 </html>
 
 <script>
-  function mudarExercicios() {
-    var mrOlympia = document.getElementById('div_mrOlimpia');
-    var classicPhysique = document.getElementById('div_classicPhysique')
-
-    mrOlympia.classList.toggle("esconder-exercicio");
-    classicPhysique.classList.toggle("esconder-exercicio");
+   var mrOlympiaDiv = document.getElementById('div_mrOlimpia');
+    var classicPhysiqueDiv = document.getElementById('div_classicPhysique')
+    var openBoryBuildingDiv = document.getElementById('div_openBoryBuilding')
+    var mensPhysiqueDiv = document.getElementById('div_mensPhysique')
+  function mrOlympia() {
+    mrOlympiaDiv.classList.toggle("esconder-exercicio");
+    classicPhysiqueDiv.classList.toggle("esconder-exercicio");
+    openBoryBuildingDiv.classList.toggle("esconder-exercicio");
+    mensPhysiqueDiv.classList.toggle('esconder-exercicio')
   }
 </script>
