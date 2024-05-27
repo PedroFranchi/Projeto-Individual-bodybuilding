@@ -50,12 +50,20 @@
     </div>
   </div>
 
+
+  <!-- BOTOES DAS CATEGORIAS -->
+
+
   <div class="botões_categorias">
     <button onclick="mrOlympia()">Mr. Olympia</button>
     <button onclick="classicPhysique()">Classic Physique</button>
-    <button onclick="mudarExercicios()">Open Bodybuilding</button>
-    <button onclick="mudarExercicios()">Men's Physique</button>
+    <button onclick="openBoryBuilding()">Open Bodybuilding</button>
+    <button onclick="mensPhysique()">Men's Physique</button>
   </div>
+
+
+  <!-- PAGINA MR OLYMPIA -->
+
   <div id="div_mrOlimpia" class="conteudo_categorias">
     <div class="texto">
       <h1 id="h1_titulo_categoria">Mr. Olympia <br> O Maior Campeonato de Fisiculturismo do Mundo</h1>
@@ -69,7 +77,13 @@
     </div>
     <img src="imagens/download (1) 1.png" alt="Cbum e Ramon Dino no Palco">
   </div>
-  <div id="div_classicPhysique" class="conteudo_categorias esconder-exercicio">
+
+
+
+  <!-- PAGINA CLASSIC PHYSIQUE -->
+
+
+  <div id="div_classicPhysique" class="conteudo_categorias">
     <div class="texto">
       <h1 id="h1_titulo_categoria">Mr. Olympia <br> O Maior Campeonato de Fisiculturismo do Mundo</h1>
       <p>
@@ -81,7 +95,12 @@
     </div>
     <img src="imagens/O ano mais brasileiro do fisiculturismo_ 2022 pode transformar o cenário_ 1.png" alt="Ramon Dino">
   </div>
-  <div id="div_openBoryBuilding" class="conteudo_categorias esconder-exercicio">
+
+
+  <!-- PAGINA OPEN BORYBUILDING -->
+
+
+  <div id="div_openBoryBuilding" class="conteudo_categorias">
     <div class="texto">
       <h1 id="h1_titulo_categoria">Mr. Olympia <br> O Maior Campeonato de Fisiculturismo do Mundo</h1>
       <p>
@@ -93,7 +112,11 @@
     </div>
     <img src="imagens/Phenq reviews and results_ Is Phenq safe_ Complete Guide 1.png" alt="Rafael Brandão">
   </div>
-  <div id="div_mensPhysique" class="conteudo_categorias esconder-exercicio">
+
+
+  <!-- PAGINA MENS'S PHYSIQUE -->
+
+  <div id="div_mensPhysique" class="conteudo_categorias">
     <div class="texto">
       <h1 id="h1_titulo_categoria">Mr. Olympia <br> O Maior Campeonato de Fisiculturismo do Mundo</h1>
       <p>
@@ -106,28 +129,37 @@
     <img src="imagens/Snapinsta.app_336235616_768742484542681_4629490933350852489_n_1080-1-e1683132906338 1.png "
       alt="Diogo Montenegro">
   </div>
-
-  <!-- <div id="exercicio1e2" class="exercicio">Olá, sou o elemento exercicio1e2</div>
-  <div id="exercicio3e4" class="exercicio esconder-exercicio">Olá, sou o elemento exercicio3e4, tudo bem?</div>
-
-  <button class="mudarExercicio" onclick="mudarExercicios()">
-    <i class="fas fa-exchange-alt"></i>Mudar Exercicio
-  </button> -->
-
-
 </body>
 
 </html>
 
 <script>
-   var mrOlympiaDiv = document.getElementById('div_mrOlimpia');
-    var classicPhysiqueDiv = document.getElementById('div_classicPhysique')
-    var openBoryBuildingDiv = document.getElementById('div_openBoryBuilding')
-    var mensPhysiqueDiv = document.getElementById('div_mensPhysique')
+
   function mrOlympia() {
-    mrOlympiaDiv.classList.toggle("esconder-exercicio");
-    classicPhysiqueDiv.classList.toggle("esconder-exercicio");
-    openBoryBuildingDiv.classList.toggle("esconder-exercicio");
-    mensPhysiqueDiv.classList.toggle('esconder-exercicio')
+    div_mrOlimpia.style.display = "flex";
+    div_classicPhysique.style.display = "none";
+    div_openBoryBuilding.style.display = "none";
+    div_mensPhysique.style.display = "none";
+  }
+
+  function classicPhysique() {
+    div_mrOlimpia.style.display = "none";
+    div_classicPhysique.style.display = "flex";
+    div_openBoryBuilding.style.display = "none";
+    div_mensPhysique.style.display = "none";
+  }
+
+  function openBoryBuilding() {
+    div_mrOlimpia.style.display = "none";
+    div_classicPhysique.style.display = "none";
+    div_openBoryBuilding.style.display = "flex";
+    div_mensPhysique.style.display = "none";
+  }
+
+  function mensPhysique() {
+    div_mrOlimpia.style.display = "none";
+    div_classicPhysique.style.display = "none";
+    div_openBoryBuilding.style.display = "none";
+    div_mensPhysique.style.display = "flex";
   }
 </script>

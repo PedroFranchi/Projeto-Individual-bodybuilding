@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cadastro.css" />
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <!-- Inicio Header -->
+    <header class="conteinerHeader">
+        <div class="header">
+            <div class="container">
+                <div class="headerImagem">
+                    <img src="imagens/Vintage Fitness Concept (1) (1) 1.png" alt="" height="80px" />
+                    <h1 class="titulo">BuildingTech</h1>
+                </div>
+                <ul class="navbar">
+                    <li><a href="index.html" class="linkHeader">Inicial</a></li>
+                    <li><a href="" class="linkHeader">Sobre Mim</a></li>
+                    <li><a href="login.html" class="linkHeader">Login</a></li>
+                    <li><a href="cadastro.html" class="linkHeader">Cadastro</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Final do Header -->
+
+    <section class="window1">    <!-- Inicio do card de Cadastro -->
+    <div class="flexCard">
+        <div class="card">
+            <h2>Bem-vindo!</h2>
+            <div class="formulario">
+                <div class="campo">
+                    <span>Nome:</span>
+                    <input id="nome_input" type="text" placeholder="Seu nome" />
+                </div>
+                <div class="campo">
+                    <span>E-mail:</span>
+                    <input id="email_input" type="text" placeholder="meuemail@provedor.com" />
+                </div>
+                <div class="campo">
+                    <span>Senha:</span>
+                    <input id="senha_input" type="password" placeholder="******" />
+                </div>
+                <div class="campo">
+                    <span>Confirmação da Senha:</span>
+                    <input id="confirmacao_senha_input" type="password" placeholder="******" />
+                </div>
+                <button class="botao" onclick="cadastrar()">Cadastrar</button>
+            </div>
+            <div id="div_aguardar" class="loading-div">
+                <img src="./assets/circle-loading.gif" id="loading-gif" />
+            </div>
+
+            <div id="div_erros_login"></div>
+        </div>
+    </div>
+    </div>
+</section>
+
+    <!-- Fim card -->
+    <!-- Inicio Footer -->
+    <footer>
+        <div class="headerImagem">
+            <img src="imagens/Vintage Fitness Concept (1) (1) 1.png" alt="" height="80px" />
+            <h1 class="titulo">BuildingTech</h1>
+        </div>
+    </footer>
+    <!-- Final Footer -->
+</body>
+
+</html>

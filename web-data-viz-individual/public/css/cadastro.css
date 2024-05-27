@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.conteinerHeader {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+    /* overflow: hidden; */
+}
+
+.header {
+    background-color: black;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.header .container .headerImagem {
+    margin-left: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.titulo {
+    color: white;
+    font-size: large;
+}
+
+.navbar {
+    width: 400px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+}
+
+.header .container {
+    gap: 60%;
+}
+
+.header .container ul {
+    justify-content: space-between;
+}
+
+.linkHeader {
+    color: white;
+    font-size: 12px;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Campos Login */
+.window1{
+    height: 82vh;
+}
+
+.flexCard {
+    /* margin-top: 8%; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    /* margin-bottom: 9%; */
+}
+
+.flexCard .card {
+    border: solid black 2px;
+    width: 30%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudoCadastro {
+    display: flex;
+    flex-direction: column;
+}
+
+.alerta_erro{
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .card_erro {
+    display: none;
+    background-color: #fff;
+    color: black;
+    width: 230px;
+    position: fixed;
+    border-radius: 4px;
+    border: #e6005a 3px solid;
+    padding: 10px;
+    margin-right: 10%;
+  }
+  
+  .card_erro #mensagem_erro{
+    font-weight: 500;
+    font-size: 20px;
+  }
+  
+  /* .formulario .tipo_campo {
+    font-size: 20px;
+    font-weight: 600 !important;
+  } */
+  
+  .formulario {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    margin-bottom: 10px;
+    border: 2px solid #32b9cd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .btn {
+    font-family: "Barlow", sans-serif;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 15px;
+    color: white;
+    background-color: #e6005a;
+    width: 120px;
+    align-self: center;
+    margin-top: 5px;
+  }
+
+  .botao {
+    cursor: pointer;
+    font-family: "Barlow", sans-serif;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    width: 120px;
+    height: 30px;
+    align-self: center;
+    margin-top: 20px;
+  }
+  
+  .loading-div {
+    width: 50px;
+    margin: auto;
+    display: none;
+  }
+  
+  .loading-div img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .campo {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 5px 0;
+  }
+
+  .card {
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: palevioletred;
+    flex-direction: column;
+    height: fit-content;
+    padding: 20px 0;
+  }
+  
+  .botao:hover, .botao:focus{
+    transition: all 0.5s;
+    transform: scale();
+  }
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 0;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+footer .headerImagem{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    justify-content: center;
+
+}
