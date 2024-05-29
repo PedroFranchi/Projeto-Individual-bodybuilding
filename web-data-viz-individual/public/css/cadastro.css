@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-family: sans-serif;
 }
 
 .conteinerHeader {
@@ -9,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Verdana;
-    /* overflow: hidden; */
+
 }
 
 .header {
@@ -65,6 +66,26 @@ body {
     height: 82vh;
 }
 
+.card {
+  width: 50%;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: rgb(240, 70, 70);
+  flex-direction: column;
+  height: fit-content;
+  padding: 20px 0;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 30px;
+  color: rgb(240, 70, 70);
+  margin-bottom: 5px;
+}
+
 .flexCard {
     /* margin-top: 8%; */
     width: 100%;
@@ -73,7 +94,6 @@ body {
     align-items: center;
     justify-content: center;
     margin: auto;
-    /* margin-bottom: 9%; */
 }
 
 .flexCard .card {
@@ -112,11 +132,6 @@ body {
     font-size: 20px;
   }
   
-  /* .formulario .tipo_campo {
-    font-size: 20px;
-    font-weight: 600 !important;
-  } */
-  
   .formulario {
     display: flex;
     flex-direction: column;
@@ -124,7 +139,7 @@ body {
   
   input {
     margin-bottom: 10px;
-    border: 2px solid #32b9cd;
+    border: 2px solid rgb(0, 0, 0);
     padding: 10px;
     text-align: center;
     border-radius: 10px;
@@ -138,7 +153,7 @@ body {
     font-size: 18px;
     padding: 10px 15px;
     color: white;
-    background-color: #e6005a;
+    background-color: rgb(240, 70, 70);
     width: 120px;
     align-self: center;
     margin-top: 5px;
@@ -152,7 +167,7 @@ body {
     font-weight: 600;
     font-size: 18px;
     color: white;
-    background-color: black;
+    background-color: rgb(240, 70, 70);
     width: 120px;
     height: 30px;
     align-self: center;
@@ -175,19 +190,7 @@ body {
     flex-direction: column;
     justify-content: start;
     padding: 5px 0;
-  }
-
-  .card {
-    width: 50%;
-    background-color: white;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    color: palevioletred;
-    flex-direction: column;
-    height: fit-content;
-    padding: 20px 0;
+    color: rgb(240, 70, 70);
   }
   
   .botao:hover, .botao:focus{
