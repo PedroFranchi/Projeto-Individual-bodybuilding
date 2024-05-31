@@ -17,4 +17,22 @@ CREATE TABLE usuario (
 	senha VARCHAR(50)
 );
 
+create table quiz (
+id int auto_increment,
+acertos int,
+erros int,
+fkUsuario int,
+primary key (id),
+foreign key (fkUsuario) references usuario (id)
+);
+
+
 select * from usuario;
+select * from quiz;
+
+SELECT	acertos,
+		erros,
+		fkUsuario
+FROM quiz 
+WHERE fkUsuario = 4
+ORDER BY id DESC LIMIT 1;

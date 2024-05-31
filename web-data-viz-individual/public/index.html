@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="./css/carrossel.css">
 </head>
 
 <body>
@@ -39,6 +40,35 @@
       </div>
     </div>
   </section>
+  <section>
+    <div class="flexCard">
+      <div class="card">
+        <p>
+        <h1>O que é Musculação?</h1>
+        A musculação é uma prática de exercícios que utiliza pesos e máquinas para fortalecer e desenvolver os
+        músculos,
+        podendo ser realizada em academias ou em casa. Seus objetivos variam entre aumento de massa muscular, força,
+        resistência, perda de peso e tonificação. Os exercícios são feitos com pesos livres ou em máquinas, cada um
+        com
+        suas vantagens. As técnicas de treinamento incluem séries, repetições, progressão de carga e períodos de
+        descanso, variando conforme o objetivo do treino. Para evitar lesões, é essencial manter a técnica correta,
+        realizar aquecimentos e alongamentos e, especialmente para iniciantes, contar com a supervisão de um
+        profissional. A musculação é adaptável a diversos níveis e necessidades de condicionamento físico.
+        </p>
+      </div>
+      <div class="card2">
+        <p>
+        <h1>Quais seus beneficios?</h1>
+        A musculação oferece diversos benefícios, incluindo o aumento da massa muscular e da força, que ajudam a
+        melhorar a performance física e a capacidade funcional no dia a dia. Ela também fortalece os ossos,
+        contribuindo para a prevenção da osteoporose, e melhora a composição corporal, promovendo a redução da gordura
+        corporal e o aumento da massa magra. Além disso, a musculação pode melhorar a saúde cardiovascular, pois
+        exercícios de resistência têm efeitos positivos sobre a pressão arterial e os níveis de colesterol. No âmbito
+        mental, a prática regular de musculação pode reduzir o estresse, melhorar o humor e aumentar a autoestima,
+        contribuindo para o bem-estar geral.
+        </p>
+      </div>
+  </section>
   <div class="o_que_é_fisiculturismo">
     <img src="imagens/Ronnie Coleman.jpg" alt="Ronnie Coleman">
     <div class="texto">
@@ -50,16 +80,6 @@
     </div>
   </div>
 
-
-  <!-- BOTOES DAS CATEGORIAS -->
-
-
-  <div class="botões_categorias">
-    <button onclick="mrOlympia()">Mr. Olympia</button>
-    <button onclick="classicPhysique()">Classic Physique</button>
-    <button onclick="openBoryBuilding()">Open Bodybuilding</button>
-    <button onclick="mensPhysique()">Men's Physique</button>
-  </div>
 
 
   <!-- PAGINA MR OLYMPIA -->
@@ -78,12 +98,10 @@
     <img src="imagens/download (1) 1.png" alt="Cbum e Ramon Dino no Palco">
   </div>
 
-
-
   <!-- PAGINA CLASSIC PHYSIQUE -->
 
-
-  <div id="div_classicPhysique" class="conteudo_categorias">
+  <div class="conteudo_categorias" style="display: flex;">
+    <img src="imagens/O ano mais brasileiro do fisiculturismo_ 2022 pode transformar o cenário_ 1.png" alt="Ramon Dino">
     <div class="texto">
       <h1 id="h1_titulo_categoria">Mr. Olympia <br> O Maior Campeonato de Fisiculturismo do Mundo</h1>
       <p>
@@ -93,14 +111,56 @@
         ultrapassadas, para que com isso seja buscado um físico mais estético e harmonioso
       </p>
     </div>
-    <img src="imagens/O ano mais brasileiro do fisiculturismo_ 2022 pode transformar o cenário_ 1.png" alt="Ramon Dino">
+  </div>
+
+
+  <!-- Carrossel Classic Physique -->
+  <div class="carouselClassic">
+    <button class="prevClassic" onclick="prevSlideClassic()">&#10094;</button>
+    <div class="carousel-content-classic">
+
+      <div class="slideClassic">
+        <article>
+          <h1>Muscle Cars</h1>
+          <p>Carros potentes com muita cavalaria em seu motor, e um ronco forte e barulhento, mostra que está
+            chegando, e chega rápido.</p>
+          <button onclick="alert('Botão do Slide 1 clicado')">Saiba Mais</button>
+        </article>
+        <img src="imagens/Chris Bumstead on Instagram_ “Cheeky little @jaycutler quad stomp👌🏼” 1.png" alt="Imagem 1">
+      </div>
+
+      <div class="slideClassic">
+        <article>
+          <h1>Carros Elétricos</h1>
+          <p>Futuro do automobilismo, carros eficientes e rápidos. Cheios de tecnologia de última geração e
+            economia
+            gigantesca.</p>
+          <button onclick="alert('Botão do Slide 1 clicado')">Saiba Mais</button>
+        </article>
+        <img src="imagens/Breon Ansley 7 weeks out.jpg" alt="Imagem 1">
+      </div>
+
+      <div class="slideClassic">
+        <article>
+          <h1>Carros Elétricos</h1>
+          <p>Futuro do automobilismo, carros eficientes e rápidos. Cheios de tecnologia de última geração e
+            economia
+            gigantesca.</p>
+          <button onclick="alert('Botão do Slide 1 clicado')">Saiba Mais</button>
+        </article>
+        <img src="imagens/Danny Hester actually showed quite an old school physique.jpg" alt="Imagem 1">
+      </div>
+
+      <!-- Adicione mais slides conforme necessário -->
+    </div>
+    <button class="nextClassic" onclick="nextSlideClassic()">&#10095;</button>
   </div>
 
 
   <!-- PAGINA OPEN BORYBUILDING -->
 
 
-  <div id="div_openBoryBuilding" class="conteudo_categorias">
+  <div class="conteudo_categorias">
     <div class="texto">
       <h1 id="h1_titulo_categoria">Mr. Olympia <br> O Maior Campeonato de Fisiculturismo do Mundo</h1>
       <p>
@@ -114,9 +174,52 @@
   </div>
 
 
+  <!-- Carrossel OPEN BORYBUILDING -->
+  <div class="carouselOpen">
+    <button class="prevOpen" onclick="prevslideOpen()">&#10094;</button>
+    <div class="carousel-content-open">
+
+      <div class="slideOpen">
+        <article>
+          <h1>Muscle Cars</h1>
+          <p>Carros potentes com muita cavalaria em seu motor, e um ronco forte e barulhento, mostra que está
+            chegando, e chega rápido.</p>
+          <button onclick="alert('Botão do Slide 1 clicado')">Saiba Mais</button>
+        </article>
+        <img src="imagens/Ronnie Coleman_ A Lenda do Fisiculturismo e seu Legado 1.png" alt="Imagem 1">
+      </div>
+
+      <div class="slideOpen">
+        <article>
+          <h1>Carros Elétricos</h1>
+          <p>Futuro do automobilismo, carros eficientes e rápidos. Cheios de tecnologia de última geração e
+            economia
+            gigantesca.</p>
+          <button onclick="alert('Botão do Slide 1 clicado')">Saiba Mais</button>
+        </article>
+        <img src="imagens/Lee Haney (1).jpg" alt="Imagem 1">
+      </div>
+
+      <div class="slideOpen">
+        <article>
+          <h1>Carros Elétricos</h1>
+          <p>Futuro do automobilismo, carros eficientes e rápidos. Cheios de tecnologia de última geração e
+            economia
+            gigantesca.</p>
+          <button onclick="alert('Botão do Slide 1 clicado')">Saiba Mais</button>
+        </article>
+        <img src="imagens/Foto arnold.jpg" alt="Imagem 1">
+      </div>
+
+      <!-- Adicione mais slides conforme necessário -->
+    </div>
+    <button class="nextOpen" onclick="nextslideOpen()">&#10095;</button>
+  </div>
+
+
   <!-- PAGINA MENS'S PHYSIQUE -->
 
-  <div id="div_mensPhysique" class="conteudo_categorias">
+  <div class="conteudo_categorias">
     <div class="texto">
       <h1 id="h1_titulo_categoria">Mr. Olympia <br> O Maior Campeonato de Fisiculturismo do Mundo</h1>
       <p>
@@ -129,37 +232,267 @@
     <img src="imagens/Snapinsta.app_336235616_768742484542681_4629490933350852489_n_1080-1-e1683132906338 1.png "
       alt="Diogo Montenegro">
   </div>
+
+
+  <!-- Carrossel MENS'S PHYSIQUE -->
+  <div class="carouselMens">
+    <button class="prevMens" onclick="prevSlideMens()">&#10094;</button>
+    <div class="carousel-content-mens">
+
+      <div class="slideMens">
+        <article>
+          <h1>Muscle Cars</h1>
+          <p>Carros potentes com muita cavalaria em seu motor, e um ronco forte e barulhento, mostra que está
+            chegando, e chega rápido.</p>
+          <button onclick="alert('Botão do Slide 1 clicado')">Saiba Mais</button>
+        </article>
+        <img src="imagens/Jeremy Buendia's Inspirational Journey to Olympia 2023 - Tikkay Khan.jpg" alt="Imagem 1">
+      </div>
+
+      <div class="slideMens">
+        <article>
+          <h1>Carros Elétricos</h1>
+          <p>Futuro do automobilismo, carros eficientes e rápidos. Cheios de tecnologia de última geração e
+            economia
+            gigantesca.</p>
+          <button onclick="alert('Botão do Slide 1 clicado')">Saiba Mais</button>
+        </article>
+        <img src="imagens/brandon hendrickson.jpg" alt="Imagem 1">
+      </div>
+
+      <div class="slideMens">
+        <article>
+          <h1>Carros Elétricos</h1>
+          <p>Futuro do automobilismo, carros eficientes e rápidos. Cheios de tecnologia de última geração e
+            economia
+            gigantesca.</p>
+          <button onclick="alert('Botão do Slide 1 clicado')">Saiba Mais</button>
+        </article>
+        <img src="imagens/Ryan Terry Bio, Age, Weight, Wife, Net Worth, Olympia - Tikkay Khan 1.png" alt="Imagem 1">
+      </div>
+
+      <!-- Adicione mais slides conforme necessário -->
+    </div>
+    <button class="nextMens" onclick="nextSlideMens()">&#10095;</button>
+  </div>
+
+  <footer>
+    <div class="headerImagem">
+      <img src="imagens/Vintage Fitness Concept (1) (1) 1.png" alt="" height="80px" />
+      <h1 class="titulo">BuildingTech</h1>
+    </div>
+  </footer>
 </body>
 
 </html>
 
 <script>
 
-  function mrOlympia() {
-    div_mrOlimpia.style.display = "flex";
-    div_classicPhysique.style.display = "none";
-    div_openBoryBuilding.style.display = "none";
-    div_mensPhysique.style.display = "none";
+
+  window.addEventListener('scroll', function () {
+    const card = document.querySelector('.card');
+    const card2 = document.querySelector('.card2')
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition > 300) { // Ajuste o valor conforme necessário
+      card.classList.toggle('cardAparecer');
+      card.classList.toggle('card');
+      card2.classList.toggle('card2Aparecer');
+      card2.classList.toggle('card2');
+    }
+  });
+
+
+  //  CARROSSEL MENS
+  let currentIndexMens = 0;
+
+  function nextSlideMens() {
+    const slides = document.querySelectorAll('.carousel-content-mens .slideMens');
+    currentIndexMens = (currentIndexMens + 1) % slides.length;
+    updateCarouselMens();
+  }
+  function prevSlideMens() {
+    const slides = document.querySelectorAll('.carousel-content-mens .slideMens');
+    currentIndexMens = (currentIndexMens - 1 + slides.length) % slides.length;
+    updateCarouselMens();
   }
 
-  function classicPhysique() {
-    div_mrOlimpia.style.display = "none";
-    div_classicPhysique.style.display = "flex";
-    div_openBoryBuilding.style.display = "none";
-    div_mensPhysique.style.display = "none";
+  function updateCarouselMens() {
+    const carouselContent = document.querySelector('.carousel-content-mens');
+    const slideWidth = carouselContent.offsetWidth; // Obtém a largura do contêiner do carrossel
+    carouselContent.style.transform = `translateX(${-currentIndexMens * slideWidth}px)`;
+
+    // Atualizar indicadores de slide
+    const indicators = document.querySelectorAll('.slide-indicatorMens');
+    indicators.forEach((indicator, index) => {
+      indicator.classList.remove('active');
+      if (index === currentIndexMens) {
+        indicator.classList.add('active');
+      }
+    });
   }
 
-  function openBoryBuilding() {
-    div_mrOlimpia.style.display = "none";
-    div_classicPhysique.style.display = "none";
-    div_openBoryBuilding.style.display = "flex";
-    div_mensPhysique.style.display = "none";
+  // Criar indicadores de slide
+  document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.carousel-content-mens .slideMens');
+    const slideIndicatorsContainer = document.querySelector('.slide-indicatorsMens');
+    slides.forEach((slide, index) => {
+      const indicator = document.createElement('span');
+      indicator.classList.add('.slide-indicatorMens');
+      if (index === 0) {
+        indicator.classList.add('active');
+      }
+      indicator.onclick = () => {
+        currentIndexMens = index;
+        updateCarouselMens();
+      };
+      slideIndicatorsContainer.appendChild(indicator);
+    });
+
+    // Atualizar o carrossel quando a janela é redimensionada
+    window.addEventListener('resize', () => {
+      updateCarouselMens();
+    });
+
+    // Atualizar o carrossel após o carregamento completo da página
+    setTimeout(() => {
+      updateCarouselMens();
+    }, 0);
+  });
+
+  //  CARROSSEL OPEN
+
+  let currentIndexOpen = 0;
+
+  function nextslideOpen() {
+    const slides = document.querySelectorAll('.carousel-content-open .slideOpen');
+    currentIndexOpen = (currentIndexOpen + 1) % slides.length;
+    updateCarouselOpen();
+  }
+  function prevslideOpen() {
+    const slides = document.querySelectorAll('.carousel-content-open .slideOpen');
+    currentIndexOpen = (currentIndexOpen - 1 + slides.length) % slides.length;
+    updateCarouselOpen();
   }
 
-  function mensPhysique() {
-    div_mrOlimpia.style.display = "none";
-    div_classicPhysique.style.display = "none";
-    div_openBoryBuilding.style.display = "none";
-    div_mensPhysique.style.display = "flex";
+  function updateCarouselOpen() {
+    const carouselContent = document.querySelector('.carousel-content-open');
+    const slideWidth = carouselContent.offsetWidth; // Obtém a largura do contêiner do carrossel
+    carouselContent.style.transform = `translateX(${-currentIndexOpen * slideWidth}px)`;
+
+    // Atualizar indicadores de slide
+    const indicators = document.querySelectorAll('.slide-indicatorOpen');
+    indicators.forEach((indicator, index) => {
+      indicator.classList.remove('active');
+      if (index === currentIndexOpen) {
+        indicator.classList.add('active');
+      }
+    });
   }
+
+  // Criar indicadores de slide
+  document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.carousel-content-open .slide');
+    const slideIndicatorsContainer = document.querySelector('.slide-indicatorsOpen');
+    slides.forEach((slide, index) => {
+      const indicator = document.createElement('span');
+      indicator.classList.add('.slide-indicatorOpen');
+      if (index === 0) {
+        indicator.classList.add('active');
+      }
+      indicator.onclick = () => {
+        currentIndexOpen = index;
+        updateCarouselOpen();
+      };
+      slideIndicatorsContainer.appendChild(indicator);
+    });
+
+    // Atualizar o carrossel quando a janela é redimensionada
+    window.addEventListener('resize', () => {
+      updateCarouselOpen();
+    });
+
+    // Atualizar o carrossel após o carregamento completo da página
+    setTimeout(() => {
+      updateCarouselOpen();
+    }, 0);
+  });
+
+  // CARROSSEL CLASSIC
+
+  let currentIndexClassic = 0;
+
+  function nextSlideClassic() {
+    const slides = document.querySelectorAll('.carousel-content-classic .slideClassic');
+    currentIndexClassic = (currentIndexClassic + 1) % slides.length;
+    updateCarouselClassic();
+  }
+  function prevSlideClassic() {
+    const slides = document.querySelectorAll('.carousel-content-classic .slideClassic');
+    currentIndexClassic = (currentIndexClassic - 1 + slides.length) % slides.length;
+    updateCarouselClassic();
+  }
+
+  function updateCarouselClassic() {
+    const carouselContent = document.querySelector('.carousel-content-classic');
+    const slideWidth = carouselContent.offsetWidth; // Obtém a largura do contêiner do carrossel
+    carouselContent.style.transform = `translateX(${-currentIndexClassic * slideWidth}px)`;
+
+    // Atualizar indicadores de slide
+    const indicators = document.querySelectorAll('.slide-indicatorClassic');
+    indicators.forEach((indicator, index) => {
+      indicator.classList.remove('active');
+      if (index === currentIndexClassic) {
+        indicator.classList.add('active');
+      }
+    });
+  }
+
+  // Criar indicadores de slide
+  document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.carousel-content-classic .slideClassic');
+    const slideIndicatorsContainer = document.querySelector('.slide-indicatorsClassic');
+    slides.forEach((slide, index) => {
+      const indicator = document.createElement('span');
+      indicator.classList.add('.slide-indicatorClassic');
+      if (index === 0) {
+        indicator.classList.add('active');
+      }
+      indicator.onclick = () => {
+        currentIndexClassic = index;
+        updateCarouselClassic();
+      };
+      slideIndicatorsContainer.appendChild(indicator);
+    });
+
+    // Atualizar o carrossel quando a janela é redimensionada
+    window.addEventListener('resize', () => {
+      updateCarouselClassic();
+    });
+
+    // Atualizar o carrossel após o carregamento completo da página
+    setTimeout(() => {
+      updateCarouselClassic();
+    }, 0);
+  });
+
+
+
+  // function classicPhysique() {
+  //   div_classicPhysique.style.display = "flex";
+  //   div_openBoryBuilding.style.display = "none";
+  //   div_mensPhysique.style.display = "none";
+  // }
+
+  // function openBoryBuilding() {
+  //   div_classicPhysique.style.display = "none";
+  //   div_openBoryBuilding.style.display = "flex";
+  //   div_mensPhysique.style.display = "none";
+  // }
+
+  // function mensPhysique() {
+  //   div_classicPhysique.style.display = "none";
+  //   div_openBoryBuilding.style.display = "none";
+  //   div_mensPhysique.style.display = "flex";
+  // }
 </script>

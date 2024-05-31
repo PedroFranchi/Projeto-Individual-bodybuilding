@@ -1,0 +1,383 @@
+body {
+    background-color: black;
+}
+
+.slideClassic {
+    width: 100vw;
+    height: 60vh;
+    background-color: black;
+    box-shadow: 20px 10px 20px rgb(63, 63, 63);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex: 0 0 100%;
+    text-align: center;
+}
+
+.slideClassic article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    width: 50%;
+    margin: 5em;
+}
+
+.slideClassic article h1 {
+    margin: 0;
+    font-size: 56px;
+    color: white;
+}
+
+.slideClassic article p {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+}
+
+.slideClassic article button {
+    margin-top: 1em;
+    background-color: red;
+    color: white;
+    width: 10em;
+    height: 2em;
+    border: none;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 20px;
+
+    transition: ease-in-out 0.2s;
+}
+
+.slideClassic article button:hover {
+    background-color: rgb(160, 0, 0);
+    color: white;
+    cursor: pointer;
+}
+
+.slideClassic img {
+    width: 20vw;
+    border: white 5px solid;
+    border-radius: 50px;
+    margin-right: 10em;
+}
+
+.carros .seta {
+    width: 70px;
+    border: none;
+    margin: 3em;
+}
+
+
+
+.carouselClassic {
+    position: relative;
+    width: 80vw;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-content-classic {
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    transition: transform 0.5s ease;
+}
+
+
+.prevClassic,
+.nextClassic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    background-color: red;
+    color: black;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    width: 4vw;
+    height: 4vh;
+    z-index: 1;
+}
+
+.prevClassic {
+    left: 0;
+}
+
+.nextClassic {
+    right: 0;
+}
+
+.slide-indicatorsClassic {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.slide-indicatorClassic {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(160, 0, 0);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.slide-indicatorClassic.active {
+    background-color: white;
+}
+
+.slideOpen {
+    width: 100vw;
+    height: 60vh;
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex: 0 0 100%;
+    text-align: center;
+}
+
+.slideOpen article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    width: 50%;
+    margin: 5em;
+}
+
+.slideOpen article h1 {
+    margin: 0;
+    font-size: 56px;
+    color: white;
+}
+
+.slideOpen article p {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+}
+
+.slideOpen article button {
+    margin-top: 1em;
+    background-color: red;
+    color: white;
+    width: 10em;
+    height: 2em;
+    border: none;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 20px;
+
+    transition: ease-in-out 0.2s;
+}
+
+.slideOpen article button:hover {
+    background-color: rgb(160, 0, 0);
+    color: white;
+    cursor: pointer;
+}
+
+.slideOpen img {
+    width: 20vw;
+    border: white 5px solid;
+    border-radius: 50px;
+    margin-right: 10em;
+}
+
+.carros .seta {
+    width: 70px;
+    border: none;
+    margin: 3em;
+}
+
+
+
+.carouselOpen {
+    position: relative;
+    width: 80vw;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-content-open {
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    transition: transform 0.5s ease;
+}
+
+
+.prevOpen,
+.nextOpen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    background-color: red;
+    color: black;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    width: 4vw;
+    height: 4vh;
+    z-index: 1;
+}
+
+.prevOpen {
+    left: 0;
+}
+
+.nextOpen {
+    right: 0;
+}
+
+.slide-indicatorsOpen {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.slide-indicatorOpen {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(160, 0, 0);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.slide-indicatorOpen.active {
+    background-color: white;
+}
+
+.slideMens {
+    width: 100vw;
+    height: 60vh;
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex: 0 0 100%;
+    text-align: center;
+}
+
+.slideMens article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    width: 50%;
+    margin: 5em;
+}
+
+.slideMens article h1 {
+    margin: 0;
+    font-size: 56px;
+    color: white;
+}
+
+.slideMens article p {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+}
+
+.slideMens article button {
+    margin-top: 1em;
+    background-color: red;
+    color: white;
+    width: 10em;
+    height: 2em;
+    border: none;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 20px;
+
+    transition: ease-in-out 0.2s;
+}
+
+.slideMens article button:hover {
+    background-color: rgb(160, 0, 0);
+    color: white;
+    cursor: pointer;
+}
+
+.slideMens img {
+    width: 20vw;
+    border: white 5px solid;
+    border-radius: 50px;
+    margin-right: 10em;
+}
+
+.carouselMens {
+    position: relative;
+    width: 80vw;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-content-mens {
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    transition: transform 0.5s ease;
+}
+
+
+.prevMens,
+.nextMens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    background-color: red;
+    color: black;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    width: 4vw;
+    height: 4vh;
+    z-index: 1;
+}
+
+.prevMens {
+    left: 0;
+}
+
+.nextMens {
+    right: 0;
+}
+
+.slide-indicatorsMens {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.slide-indicatorMens {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(160, 0, 0);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.slide-indicatorMens.active {
+    background-color: white;
+}

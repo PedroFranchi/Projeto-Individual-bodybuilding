@@ -1,202 +1,487 @@
+@keyframes cardAnimacao1 {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+
+
+  }
+}
+
+@keyframes cardAnimacao2 {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+
+
+  }
+}
+
 body {
-    width: 100%;
-    min-height: 100vh;
-    background-color: black;
-    margin: 0;
-    padding: 0;
-    font-family: Verdana;
-  }
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana;
+}
 
-  .container {
-    width: 100%;
-    margin: auto;
-    display: flex;
-  }
+.container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
 
-  .container .headerImagem {
-    margin-left: 2%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-  }
+.container .headerImagem {
+  margin-left: 2%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
 
-  .header {
-    background-color: black;
-  }
+.header {
+  background-color: black;
+}
 
-  .titulo {
-    color: white;
-    font-size: large;
-  }
+.titulo {
+  color: white;
+  font-size: large;
+}
 
-  .navbar {
-    width: 400px;
-    display: flex;
-    color: white;
-    justify-content: center;
-    list-style: none;
-    align-items: center;
-  }
+.navbar {
+  width: 400px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+}
 
-  .header .container {
-    gap: 60%;
-  }
+.header .container {
+  gap: 60%;
+}
 
-  .header .container ul {
-    justify-content: space-between;
-  }
+.header .container ul {
+  justify-content: space-between;
+}
 
-  .linkHeader {
-    color: white;
-    font-size: 12px;
-    list-style: none;
-    text-decoration: none;
-  }
+.linkHeader {
+  color: white;
+  font-size: 12px;
+  list-style: none;
+  text-decoration: none;
+}
 
 
-  * {
-    padding: 0;
-    margin: 0;
-    font-family: "Arial";
-    box-sizing: border-box;
-  }
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Arial";
+  box-sizing: border-box;
+}
 
-  section {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    background-color: black;
-  }
+section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: black;
+}
 
-  section div.background-section {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 0;
-  }
+section div.background-section {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+}
 
-  section div.background-section video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    filter: brightness(30%);
-  }
+section div.background-section video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(30%);
+}
 
-  section div.box {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2%;
-  }
+section div.box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
 
-  section div.box div.conteudo {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+section div.box div.conteudo {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-  section div.box p {
-    color: white;
-    font-size: 20px;
-    line-height: 32px;
-  }
+section div.box p {
+  color: white;
+  font-size: 20px;
+  line-height: 32px;
+}
 
-  section div.box h1 {
-    color: white;
-    font-size: 60px;
-    line-height: 62px;
-  }
+section div.box h1 {
+  color: white;
+  font-size: 60px;
+  line-height: 62px;
+}
 
 .o_que_é_fisiculturismo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 5%;
-    color: white;
-}
-.o_que_é_fisiculturismo img{
-    height: 400px;
-    width: 270px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5%;
+  color: white;
 }
 
-.texto{
-    display: flex;
-    flex-direction: column;
-    padding: 10%;
-    justify-content: center;
-    align-items: center;
+.o_que_é_fisiculturismo img {
+  height: 400px;
+  width: 270px;
 }
 
-.texto p{
-    display: flex;
-    text-align: center;
+.texto {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto p {
+  display: flex;
+  text-align: center;
 }
 
 /* .categorias{
     display: flex;
 } */
 
-.botões_categorias{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-around;
-}
-
-.botões_categorias button{
-    cursor: pointer;
-    color: white;
-    background-color: transparent;
-    border-style: none;
-    height: 50px;
-    font-size: larger;
-}
-
-.conteudo_categorias h1{
-    color: white;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 5%;
-}
-.conteudo_categorias{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    padding: 5%;
-}
-.conteudo_categorias img{
-    height: 300px;
-}
-
-.conteudo_categorias p{
-    color: white;
-    text-align: center;
-    display: flex;
-    padding: 5%;
-}
-
-#div_openBoryBuilding{
-  display: none;
-}
-
-#div_mensPhysique{
-  display: none;
-}
-
-#div_classicPhysique{
-  display: none;
-}
-
-#div_mrOlimpia{
+.botões_categorias {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.botões_categorias button {
+  cursor: pointer;
+  color: white;
+  background-color: transparent;
+  border-style: none;
+  height: 50px;
+  font-size: larger;
+}
+
+.conteudo_categorias h1 {
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.conteudo_categorias {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 50px;
+}
+
+.conteudo_categorias img {
+  height: 300px;
+}
+
+.conteudo_categorias p {
+  color: white;
+  text-align: center;
+  display: flex;
+  padding: 5%;
+}
+
+#div_openBoryBuilding {
+  display: none;
+}
+
+#div_mensPhysique {
+  display: none;
+}
+
+#div_classicPhysique {
+  display: none;
+}
+
+#div_mrOlimpia {
+  display: flex;
+}
+
+/* Teste */
+
+.flexCard {
+  /* position: relative; */
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* .cardMusculacao {
+  /* position: absolute;
+  left: -100%;
+  transition: left 1s ease-in-out;
+  padding: 20px;
+  background-color: lightblue;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+/* border: solid white 2px;
+  color: white;
+  height: 600px;
+  width: 500px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+} */
+
+.card {
+  width: 500px;
+  height: 400px;
+  border-radius: 30px;
+  background: #212121;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  margin: auto;
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.cardAparecer {
+  width: 500px;
+  height: 400px;
+  border-radius: 30px;
+  background: #212121;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  margin: auto;
+  animation-name: cardAnimacao1;
+  animation-duration: 1.5s;
+}
+
+.card2 {
+  width: 500px;
+  height: 400px;
+  border-radius: 30px;
+  background: #212121;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  margin: auto;
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.card2Aparecer {
+  width: 500px;
+  height: 400px;
+  border-radius: 30px;
+  background: #212121;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  margin: auto;
+  animation-name: cardAnimacao2;
+  animation-duration: 1.5s;
+}
+
+.slide {
+  width: 100vw;
+  height: 60vh;
+  background-color: rgb(177, 172, 172);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex: 0 0 100%;
+  text-align: center;
+
+  color: white;
+}
+
+.slide article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  width: 50%;
+  margin: 5em;
+}
+
+.slide article h1 {
+  margin: 0;
+  font-size: 56px;
+  color: var(--GavaWhite);
+}
+
+.slide article p {
+  margin: 0;
+  font-size: 24px;
+  color: var(--GavaWhite);
+}
+
+.slide article button {
+  margin-top: 1em;
+  background-color: var(--GavaWhite);
+  color: var(--GavaPurpleSecondary);
+  width: 10em;
+  height: 2em;
+  border: none;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 20px;
+
+  transition: ease-in-out 0.2s;
+}
+
+.slide article button:hover {
+  background-color: var(--GavaPurplePrincipal);
+  color: var(--GavaWhite);
+  cursor: pointer;
+}
+
+.slide img {
+  width: 20vw;
+  border: var(--GavaWhite) 5px solid;
+  border-radius: 50px;
+  margin-right: 10em;
+}
+
+.carros .seta {
+  width: 70px;
+  border: none;
+  margin: 3em;
+}
+
+
+
+.carousel {
+  position: relative;
+  width: 80vw;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-content {
+  display: flex;
+  align-items: center;
+  width: 80vw;
+  transition: transform 0.5s ease;
+}
+
+
+.prev,
+.next {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  width: 4vw;
+  height: 4vh;
+  z-index: 1;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.slide-indicators {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.slide-indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: var(--GavaPurpleDark);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.slide-indicator.active {
+  background-color: var(--GavaWhite);
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  background-color: rgb(10, 10, 10);
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+footer .headerImagem {
+  width: 100%;
+  box-shadow: 20px -10px 20px rgb(63, 63, 63);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
 }
