@@ -4,8 +4,7 @@ function buscarUltimasMedidas(idUsuario, limite_linhas) {
 
     var instrucaoSql = `SELECT 
 ]                       acertos, 
-                        erros,
-                        DATE_FORMAT(momento,'%H:%i:%s') as momento_grafico
+                        erros
                     FROM quiz
                     WHERE fkUsuario = ${idUsuario}
                     ORDER BY id DESC LIMIT ${limite_linhas}`;

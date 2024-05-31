@@ -54,7 +54,7 @@ body {
 }
 
 .titulo {
-  color: white;
+  color: red;
   font-size: large;
 }
 
@@ -76,7 +76,7 @@ body {
 }
 
 .linkHeader {
-  color: white;
+  color: red;
   font-size: 12px;
   list-style: none;
   text-decoration: none;
@@ -169,9 +169,6 @@ section div.box h1 {
   text-align: center;
 }
 
-/* .categorias{
-    display: flex;
-} */
 
 .botões_categorias {
   display: flex;
@@ -246,25 +243,6 @@ section div.box h1 {
   justify-content: space-around;
 }
 
-/* .cardMusculacao {
-  /* position: absolute;
-  left: -100%;
-  transition: left 1s ease-in-out;
-  padding: 20px;
-  background-color: lightblue;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1); */
-/* border: solid white 2px;
-  color: white;
-  height: 600px;
-  width: 500px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-between;
-} */
 
 .card {
   width: 500px;
@@ -281,6 +259,11 @@ section div.box h1 {
   margin: auto;
   opacity: 0;
   transform: translateX(100%);
+  
+}
+
+.flexCard h1{
+  color: red;
 }
 
 .cardAparecer {
@@ -334,136 +317,6 @@ section div.box h1 {
   animation-duration: 1.5s;
 }
 
-.slide {
-  width: 100vw;
-  height: 60vh;
-  background-color: rgb(177, 172, 172);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  flex: 0 0 100%;
-  text-align: center;
-
-  color: white;
-}
-
-.slide article {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: start;
-  width: 50%;
-  margin: 5em;
-}
-
-.slide article h1 {
-  margin: 0;
-  font-size: 56px;
-  color: var(--GavaWhite);
-}
-
-.slide article p {
-  margin: 0;
-  font-size: 24px;
-  color: var(--GavaWhite);
-}
-
-.slide article button {
-  margin-top: 1em;
-  background-color: var(--GavaWhite);
-  color: var(--GavaPurpleSecondary);
-  width: 10em;
-  height: 2em;
-  border: none;
-  border-radius: 50px;
-  font-weight: 500;
-  font-size: 20px;
-
-  transition: ease-in-out 0.2s;
-}
-
-.slide article button:hover {
-  background-color: var(--GavaPurplePrincipal);
-  color: var(--GavaWhite);
-  cursor: pointer;
-}
-
-.slide img {
-  width: 20vw;
-  border: var(--GavaWhite) 5px solid;
-  border-radius: 50px;
-  margin-right: 10em;
-}
-
-.carros .seta {
-  width: 70px;
-  border: none;
-  margin: 3em;
-}
-
-
-
-.carousel {
-  position: relative;
-  width: 80vw;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.carousel-content {
-  display: flex;
-  align-items: center;
-  width: 80vw;
-  transition: transform 0.5s ease;
-}
-
-
-.prev,
-.next {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  background-color: white;
-  color: black;
-  border: none;
-  border-radius: 100px;
-  cursor: pointer;
-  width: 4vw;
-  height: 4vh;
-  z-index: 1;
-}
-
-.prev {
-  left: 0;
-}
-
-.next {
-  right: 0;
-}
-
-.slide-indicators {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.slide-indicator {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background-color: var(--GavaPurpleDark);
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-.slide-indicator.active {
-  background-color: var(--GavaWhite);
-}
 
 footer {
   width: 100%;
