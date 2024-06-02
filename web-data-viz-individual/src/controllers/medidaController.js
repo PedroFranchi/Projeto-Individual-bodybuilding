@@ -1,14 +1,9 @@
 var medidaModel = require("../models/medidaModel");
 
-function buscarUltimasMedidas(req, res) {
-
-    const limite_linhas = 5;
-
+function acertosUsuarios(req, res) {
     var idUsuario = req.params.idUsuario;
 
-    console.log(`Recuperando as ultimas ${limite_linhas} medidas`);
-
-    medidaModel.buscarUltimasMedidas(idUsuario, limite_linhas).then(function (resultado) {
+    medidaModel.acertosUsuarios(idUsuario).then(function (resultado) {
         if (resultado.length > 0) {
             res.status(200).json(resultado);
         } else {
@@ -21,14 +16,58 @@ function buscarUltimasMedidas(req, res) {
     });
 }
 
-
-function buscarMedidasEmTempoReal(req, res) {
+function obterMaiorPontuacao(req, res) {
 
     var idUsuario = req.params.idUsuario;
 
-    console.log(`Recuperando medidas em tempo real`);
+    medidaModel.obterMaiorPontuacao(idUsuario).then(function (resultado) {
+        if (resultado.length > 0) {
+            res.status(200).json(resultado);
+        } else {
+            res.status(204).send("Nenhum resultado encontrado!")
+        }
+    }).catch(function (erro) {
+        console.log(erro);
+        console.log("Houve um erro ao buscar as ultimas medidas.", erro.sqlMessage);
+        res.status(500).json(erro.sqlMessage);
+    });
+}
 
-    medidaModel.buscarMedidasEmTempoReal(idUsuario).then(function (resultado) {
+function qtdPessoasCadastradas(req, res) {
+
+    medidaModel.qtdPessoasCadastradas().then(function (resultado) {
+        if (resultado.length > 0) {
+            res.status(200).json(resultado);
+        } else {
+            res.status(204).send("Nenhum resultado encontrado!")
+        }
+    }).catch(function (erro) {
+        console.log(erro);
+        console.log("Houve um erro ao buscar as ultimas medidas.", erro.sqlMessage);
+        res.status(500).json(erro.sqlMessage);
+    });
+}
+
+function mediaAcertosUsuario(req, res) {
+
+    var idUsuario = req.params.idUsuario;
+
+    medidaModel.mediaAcertosUsuario(idUsuario).then(function (resultado) {
+        if (resultado.length > 0) {
+            res.status(200).json(resultado);
+        } else {
+            res.status(204).send("Nenhum resultado encontrado!")
+        }
+    }).catch(function (erro) {
+        console.log(erro);
+        console.log("Houve um erro ao buscar as ultimas medidas.", erro.sqlMessage);
+        res.status(500).json(erro.sqlMessage);
+    });
+}
+
+function obterMediaAcertosGeral(req, res) {
+
+    medidaModel.obterMediaAcertosGeral().then(function (resultado) {
         if (resultado.length > 0) {
             res.status(200).json(resultado);
         } else {
@@ -42,7 +81,9 @@ function buscarMedidasEmTempoReal(req, res) {
 }
 
 module.exports = {
-    buscarUltimasMedidas,
-    buscarMedidasEmTempoReal
-
+    acertosUsuarios,
+    obterMaiorPontuacao,
+    qtdPessoasCadastradas,
+    mediaAcertosUsuario,
+    obterMediaAcertosGeral
 }

@@ -29,10 +29,3 @@ foreign key (fkUsuario) references usuario (id)
 
 select * from usuario;
 select * from quiz;
-
-SELECT	acertos,
-		erros,
-		fkUsuario
-FROM quiz 
-WHERE fkUsuario = 4
-ORDER BY id DESC LIMIT 1;

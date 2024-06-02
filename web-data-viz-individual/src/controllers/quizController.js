@@ -2,10 +2,6 @@ var quizModel = require("../models/quizModel");
 
 function cadastrar(req, res) {
     // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
-    // var nome = req.body.nomeServer;
-    // var email = req.body.emailServer;
-    // var senha = req.body.senhaServer;
-
     var acertos = req.body.acertosServer;
     var erros = req.body.errosServer;
     var usuarioid = req.body.usuarioidServer;

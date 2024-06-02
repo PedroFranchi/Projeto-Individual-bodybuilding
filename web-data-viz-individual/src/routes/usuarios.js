@@ -12,4 +12,8 @@ router.post("/autenticar", function (req, res) {
     usuarioController.autenticar(req, res);
 });
 
+router.post("/mediaDosUsuarios", function (req, res) {
+    usuarioController.mediaDosUsuarios(req, res);
+});
+
 module.exports = router;
