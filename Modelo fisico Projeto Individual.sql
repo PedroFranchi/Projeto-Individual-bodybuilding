@@ -28,4 +28,10 @@ foreign key (fkUsuario) references usuario (id)
 
 
 select * from usuario;
+
+SELECT
+                       avg(acertos) as media_acertos_usuario
+                    FROM quiz
+                    WHERE fkUsuario = 2;
+
 select * from quiz;

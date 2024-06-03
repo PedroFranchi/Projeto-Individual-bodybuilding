@@ -3,10 +3,10 @@ var database = require("../database/config");
 function acertosUsuarios(idUsuario) {
 
     var instrucaoSql = `SELECT 
-                      acertos as acertos_usuarios
-                    FROM quiz
-                    WHERE fkUsuario = ${idUsuario}
-                    ORDER BY id DESC LIMIT 1;`;
+                            acertos as acertos_usuarios
+                        FROM quiz
+                        WHERE fkUsuario = ${idUsuario}
+                        ORDER BY id DESC LIMIT 1;`;
 
     console.log("Executando a instrução SQL: \n" + instrucaoSql);
     return database.executar(instrucaoSql);
@@ -32,12 +32,13 @@ function qtdPessoasCadastradas() {
     return database.executar(instrucaoSql);
 }
 
-function mediaAcertosUsuario(idUsuario) {
+function graficoTodosAcertosUsuario(idUsuario) {
 
     var instrucaoSql = `SELECT 
-                       avg(acertos) as media_acertos_usuario
-                    FROM quiz
-                    WHERE fkUsuario = ${idUsuario};`;
+    acertos as pontuações_usuario
+ FROM quiz
+ WHERE fkUsuario = ${idUsuario}
+ LIMIT 5;`;
 
     console.log("Executando a instrução SQL: \n" + instrucaoSql);
     return database.executar(instrucaoSql);
@@ -45,8 +46,9 @@ function mediaAcertosUsuario(idUsuario) {
 
 function obterMediaAcertosGeral() {
 
-    var instrucaoSql = `SELECT avg(acertos) as media_acertos_geral
-                         FROM quiz;`;
+    var instrucaoSql = `SELECT
+    avg(acertos) as media_acertos_geral
+ FROM quiz;`;
 
     console.log("Executando a instrução SQL: \n" + instrucaoSql);
     return database.executar(instrucaoSql);
@@ -56,6 +58,6 @@ module.exports = {
     acertosUsuarios,
     obterMaiorPontuacao,
     qtdPessoasCadastradas,
-    mediaAcertosUsuario,
+    graficoTodosAcertosUsuario,
     obterMediaAcertosGeral
 }

@@ -24,8 +24,8 @@ router.get("/acertosUsuarios/:idUsuario", function (req, res) {
     medidaController.qtdPessoasCadastradas(req, res);
   })
 
-  router.get("/mediaAcertosUsuario/:idUsuario", function (req, res) {
-    medidaController.mediaAcertosUsuario(req, res);
+  router.get("/todosAcertosUsuario/:idUsuario", function (req, res) {
+    medidaController.graficoTodosAcertosUsuario(req, res);
   })
 
   router.get("/obterMediaAcertosGeral", function (req, res) {

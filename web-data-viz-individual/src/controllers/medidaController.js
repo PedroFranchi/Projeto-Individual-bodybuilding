@@ -48,11 +48,11 @@ function qtdPessoasCadastradas(req, res) {
     });
 }
 
-function mediaAcertosUsuario(req, res) {
+function graficoTodosAcertosUsuario(req, res) {
 
     var idUsuario = req.params.idUsuario;
 
-    medidaModel.mediaAcertosUsuario(idUsuario).then(function (resultado) {
+    medidaModel.graficoTodosAcertosUsuario(idUsuario).then(function (resultado) {
         if (resultado.length > 0) {
             res.status(200).json(resultado);
         } else {
@@ -67,7 +67,9 @@ function mediaAcertosUsuario(req, res) {
 
 function obterMediaAcertosGeral(req, res) {
 
-    medidaModel.obterMediaAcertosGeral().then(function (resultado) {
+    var idUsuario = req.params.idUsuario;
+
+    medidaModel.obterMediaAcertosGeral(idUsuario).then(function (resultado) {
         if (resultado.length > 0) {
             res.status(200).json(resultado);
         } else {
@@ -84,6 +86,6 @@ module.exports = {
     acertosUsuarios,
     obterMaiorPontuacao,
     qtdPessoasCadastradas,
-    mediaAcertosUsuario,
+    graficoTodosAcertosUsuario,
     obterMediaAcertosGeral
 }
