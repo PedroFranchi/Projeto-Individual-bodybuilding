@@ -141,6 +141,14 @@
     } else if (lowerInPasswd && upperInPasswd && numberInPasswd && specialCharInPasswd) {
       setInterval(sumirMensagem, 5000);
     }
+    else{
+      cardErro.style.display = "block";
+      mensagem_erro.innerHTML =
+        "(Sua Senha é Fraca!)";
+
+      finalizarAguardar();
+      return false;
+    }
 
     // Enviando o valor da nova input
     fetch("/usuarios/cadastrar", {
