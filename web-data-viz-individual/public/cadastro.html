@@ -58,6 +58,7 @@
           </div>
           <button class="botao" onclick="cadastrar()">Cadastrar</button>
         </div>
+        <h3>Já possui Conta? <a href="login.html">Faça login</a></h3>
         <div id="div_aguardar" class="loading-div">
           <img src="./assets/circle-loading.gif" id="loading-gif" />
         </div>
@@ -82,6 +83,49 @@
     var emailVar = email_input.value;
     var senhaVar = senha_input.value;
     var confirmacaoSenhaVar = confirmacao_senha_input.value;
+    const senhaValidacao = senha_input.value;
+
+    // VERIFICAÇÃO letras minúsculas
+    let arrayLower = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+    let lowerInPasswd = false;
+
+    for (let l = 0; l < arrayLower.length; l++) {
+      if (senhaValidacao.includes(arrayLower[l])) {
+        lowerInPasswd = true;
+      }
+    }
+
+    // VERIFICAÇÃO letras maiúsculas
+    let arrayUpper = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+    let upperInPasswd = false;
+
+    for (let u = 0; u < arrayUpper.length; u++) {
+      if (senhaValidacao.includes(arrayUpper[u])) {
+        upperInPasswd = true;
+      }
+
+    }
+
+    // VERIFICAÇÃO NUMÉRICA 
+    let arrayNumbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+    let numberInPasswd = false;
+
+    for (let n = 0; n < arrayNumbers.length; n++) {
+      if (senhaValidacao.includes(arrayNumbers[n])) {
+        numberInPasswd = true;
+      }
+    }
+
+    // VERIFICAÇÃO caracteres especiais
+    let arraySpecialChar = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_'];
+    let specialCharInPasswd = false;
+
+    for (let s = 0; s < arraySpecialChar.length; s++) {
+      if (senhaValidacao.includes(arraySpecialChar[s])) {
+        specialCharInPasswd = true;
+      }
+    }
+
     if (
       nomeVar == "" ||
       emailVar == "" ||
@@ -90,11 +134,11 @@
     ) {
       cardErro.style.display = "block";
       mensagem_erro.innerHTML =
-        "(Mensagem de erro para todos os campos em branco)";
+        "(Todos os campos em branco)";
 
       finalizarAguardar();
       return false;
-    } else {
+    } else if (lowerInPasswd && upperInPasswd && numberInPasswd && specialCharInPasswd) {
       setInterval(sumirMensagem, 5000);
     }
 
