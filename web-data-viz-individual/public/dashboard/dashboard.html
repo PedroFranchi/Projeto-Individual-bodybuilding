@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="shortcut icon" href="../assets/icon/favicon2.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../imagens/Vintage Fitness Concept (1) (1) 1.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,13 +41,13 @@
                 <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
             </div>
 
-            <div class="btn-nav-white">
+            <div class="btn-nav">
                 <a href="./quiz.html">
                     <h3>Quiz</h3>
                 </a>
             </div>
 
-            <div class="btn-nav">
+            <div class="btn-nav-white">
                 <a href="./dashboard.html">
                     <h3>Dashboard</h3>
                 </a>
@@ -63,30 +63,32 @@
     <div class="dash">
         <div class="flexKpi">
             <div class="kpi">
-                <div id="div_maiorPontuacao">
-                    uiyrfuyfyut
-                </div>
+                <h2>Maior pontuação</h2>
+                <div class="resultadoKpi" id="div_maiorPontuacao"></div>
             </div>
             <div class="kpi">
-                <div id="div_acertos">
-                    asbvdkajhsfgdkjhagf
+                <div class="tituloGrafico">
+                    <h2>Ultima Pontuação</h2>
                 </div>
+                <div class="resultadoKpi" id="div_acertos"></div>
             </div>
             <div class="kpi">
-                <div id="div_PessoasCadastradas">
-                    ajsdaskd
+                <div class="tituloGrafico">
+                    <h2>Pessoas Cadastradas</h2>
                 </div>
+                    <div class="resultadoKpi" id="div_PessoasCadastradas"></div>
             </div>
         </div>
         <div class="graficos">
             <div class="mostrarGraficosMediaAcertosGeral">
+                <div class="tituloGrafico">
+                    <h3>Média Geral</h3>
+                </div>
                 <canvas id="myChart"></canvas>
             </div>
             <div class="mostrarGraficosMediaAcertosUsuario">
                 <div class="tituloGrafico">
-                    <img
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFZUlEQVR4nO2ZbUxbVRjHn0KAstYPjmzsA72LxBhcsukcLRhF/eSHKabV+GWyMbfERGMyo1G3RKLRT26LmxKNZBu3bGabJBoJi4NluyVuGBhQdOpk2GkYiS9hsOJtaekLf3PuvX2/LRTuJZhwkie56bn3nP/vnOc85zmnRKtltawWTQpaaQ94ugGepsFTN1qpHu1UKJmTnoGTLoAnEU4agZNepJVUwNNeOAkqFgRPs6p1rbSHVkJBKz0EnnxZALIbm4022rr8gtupFK1UB55egJM+hpP8eYtPmF9qg7XF2mynUn3Ft9HD4Gk8q6AzxUBnGeCyAJcrgb77ZGPP7DdWd7o4F9At8FSr38hnE3/WCLg44GrVwozBsG+cWSGM2gOwKU7vrM0AdJUnhLltiHoOIHK7G2FxFKHgtGTsOTLRjahnv/RO/P2ucsBpyIRoo0e1B+BpZ0onJwuBHmXUBx9A9NZHCAWmEAqFcltgEtGxw9I3iM3GqcJ0iAbtAZz0ScrIKy4z565D2OueX3iahad/wtzwEzIEGwjWZiJCHdU+VCZHG8Vt5oYfQ9g/nrf4OIR/XGoj4U5J0UmrECttUslxni0+xW3C3h8WLT4O4XUDg1uA/irgS2PqPrHUzY5t+RkLTHEdyedzCJudncWPIx40n/4GX1+8nPPd6NjBxHrIXNCNSwEYyYjzSrRhi1FNzOQdLzqEXrxxuAW7mw5J9tU8AKHAJOC2ym1n7hO/LB5ATr4SjZ0rk0f/5oGsYpjYmPAFA4RCiHrelgHOrU0HuLOUGbiQ6j4WqRMW57MJ6XD14tOzHRj8eSQvgMhElwwgpLkRT12LB2ApcXJjVyqlTsK+m/MK8s/M5AUQFkdlAJZ2pK6BpxcPIOfywXhjLK+5WoVQ0Ks5QCjolQFYHwmAAN6lgv8HQGBKHaCdCrV3IfE3HVzohg4ulG0RT3RrDhCZOK++F/DUrV0Y7VTCqGe/5gBRz5syQGdGGPXqsJFZs25kiwIITAJD1eobGU/XNU4lZDdiKbFWANGxD/VJJXInc1sQ9g4vGSDsHUokc8mnNOa+PO1dkvhlSafddfKAnF+fLN4Hnh7URHwcQr6BUDoxxF1JPtAM5S9++lriQCO5TsrR8oim4hWAhhTfZMdABYK5QHTs0LwLO7ZgJZ8f2JzIfZblSKl2qGejxtyJ+a8SnVhWyRIztjFJO3bQKz2z36Ket4AhJW3uj7mNYZkO9bmuVc6UAEJFftcqyacvZ0rYHNPlWkWC4KlWurdR65gZi+EsnxfSLrauxC621ua+2OJpDCepRhfxSRBGNsXh902fhZruAk6ouMACLXKcMP56Ea7vNOL3V4rf0W3k1Yro4Pp8Dg4zuzcAx/OHiBwzYGD7GrhsZskEq+m7ZRPvt3PbmPiYBV/LyF9kazXIplI30lgSFx83a2n1sgD47JYvkgEkiH1liDYXYe5YASIHjQi8vC5eN7rDhMkPChFuMcB/pAC/7jJmireZIdhMvO7iRUfletFhCaYDZLPb9RV+NbFZLHixxlSuM4DlvYWKZ/bHk+Wn8gCAy2pu0k08nt9ULNotfy1UvGjnZv7Zvm6DYDVNLRRAsJn/bN9ExboAiHauIZ/RFx2WE+w7wWpuzmcWLllNO/QBcHD9+QD4HRulf1t6asz35wMg2MwDugBkBbNzn6sAXEt+x2Uz9Wb6u6mFVkLBS9uKfA6uJ83/X01+55Jtza408X3f3ksltFKKWH9PuWjnxmOL1/sUd3dy/fe1VOqymiaVSPO3y1ZaQSut+J7buFV0cH7RwaluSC6r+ahgNYeFavPjtFKLz25p/PdZ7hG1OraYhRrTPi07/A/BauIG01yr6AAAAABJRU5ErkJggg==">
-                    <h3>Suas pontuações</h3>
+                    <h3>Sua Média</h3>
                 </div>
                 <canvas id="myChart2"></canvas>
             </div>
@@ -102,13 +104,13 @@
     b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
 
     let idUsuario = sessionStorage.ID_USUARIO
-    console.log(idUsuario)
+
     function iniciarDash() {
         obterKpiAcertos()
         obterMaiorPontuacao()
         obterqtdPessoasCadastradas()
-        obterGraficosPontuacaoUsuario()
         obterMediaAcertosGeral()
+        obterMediaAcertosUsuario()
     }
 
     function obterKpiAcertos() {
@@ -128,7 +130,6 @@
             });
     }
 
-
     function obterMaiorPontuacao() {
         fetch(`/medidas/obterMaiorPontuacao/${idUsuario}`, { cache: 'no-store' })
             .then(function (response) {
@@ -146,7 +147,6 @@
             });
     }
 
-
     function obterqtdPessoasCadastradas() {
         fetch(`/medidas/qtdPessoasCadastradas`, { cache: 'no-store' })
             .then(function (response) {
@@ -161,24 +161,6 @@
             })
             .catch(function (error) {
                 console.error(`Erro na obtenção dos dados p gráfico: ${error.message}`);
-            });
-    }
-
-    function obterGraficosPontuacaoUsuario() {
-        fetch(`/medidas/todosAcertosUsuario/${idUsuario}`, { cache: 'no-store' })
-            .then(function (response) {
-                if (response.ok) {
-                    response.json().then(function (resposta) {
-                        console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
-
-                        mostrarGraficosPontuacaoUsuario(resposta);
-                    });
-                } else {
-                    console.error('Nenhum dado encontrado ou erro na API');
-                }
-            })
-            .catch(function (error) {
-                console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
             });
     }
 
@@ -200,6 +182,22 @@
             });
     }
 
+    function obterMediaAcertosUsuario() {
+        fetch(`/medidas/mediaAcertoUsuario/${idUsuario}`, { cache: 'no-store' })
+            .then(function (response) {
+                if (response.ok) {
+                    response.json().then(function (resposta) {
+                        console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+                        mostrarGraficosMediaUsuario(resposta);
+                    });
+                } else {
+                    console.error('Nenhum dado encontrado ou erro na API');
+                }
+            })
+            .catch(function (error) {
+                console.error(`Erro na obtenção dos dados p gráfico: ${error.message}`);
+            });
+    }
 
     function mostrarKpiAcertos(resposta) {
         var dados = {
@@ -213,7 +211,6 @@
 
         div_acertos.innerHTML = `${dados.acertos_usuarios}`
     }
-
 
     function mostrarKpiMaiorPontuacao(resposta) {
         var dados = {
@@ -239,29 +236,27 @@
         div_PessoasCadastradas.innerHTML = `${dados.pessoas_cadastradas}`
     }
 
-
-
-    function mostrarGraficosPontuacaoUsuario(resposta) {
+    function mostrarGraficosMediaUsuario(resposta) {
         console.log('iniciando plotagem...');
 
         var dados = {
-            pontuações_usuario: []
+            media_acertos_usuario: []
         }
 
         for (var i = 0; i < resposta.length; i++) {
             var registro = resposta[i];
-            dados.pontuações_usuario.push(registro.pontuações_usuario)
+            dados.media_acertos_usuario.push(registro.media_acertos_usuario)
         }
 
         const ctx2 = document.getElementById('myChart2');
 
         new Chart(ctx2, {
-            type: 'line',
+            type: 'bar',
             data: {
-                labels: ['1','2', '3', '4', '5'],
+                labels: ['Sua Média'],
                 datasets: [{
-                    label: 'Pontuação',
-                    data: [dados.pontuações_usuario],
+                    label: 'Sua Média',
+                    data: [dados.media_acertos_usuario],
                     borderWidth: 1
                 }]
             },
@@ -276,20 +271,16 @@
 
     }
 
-
-
     function mostrarGraficosMedias(resposta) {
         console.log('iniciando plotagem...');
 
         var dados = {
-            media_acertos_geral: [],
-            media_acertos_usuario: []
+            media_acertos_geral: []
         }
 
         for (var i = 0; i < resposta.length; i++) {
             var registro = resposta[i];
             dados.media_acertos_geral.push(registro.media_acertos_geral)
-            dados.media_acertos_usuario.push(registro.media_acertos_usuario)
         }
 
         const ctx = document.getElementById('myChart');
@@ -297,10 +288,10 @@
         new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: ['Média Geral', 'Sua Média'],
+                labels: ['Média Geral'],
                 datasets: [{
-                    label: 'Médias',
-                    data: [dados.media_acertos_geral, dados.media_acertos_usuario],
+                    label: 'Média Geral',
+                    data: [dados.media_acertos_geral],
                     borderWidth: 1
                 }]
             },

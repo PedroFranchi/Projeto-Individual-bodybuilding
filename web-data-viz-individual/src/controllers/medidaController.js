@@ -48,23 +48,6 @@ function qtdPessoasCadastradas(req, res) {
     });
 }
 
-function graficoTodosAcertosUsuario(req, res) {
-
-    var idUsuario = req.params.idUsuario;
-
-    medidaModel.graficoTodosAcertosUsuario(idUsuario).then(function (resultado) {
-        if (resultado.length > 0) {
-            res.status(200).json(resultado);
-        } else {
-            res.status(204).send("Nenhum resultado encontrado!")
-        }
-    }).catch(function (erro) {
-        console.log(erro);
-        console.log("Houve um erro ao buscar as ultimas medidas.", erro.sqlMessage);
-        res.status(500).json(erro.sqlMessage);
-    });
-}
-
 function obterMediaAcertosGeral(req, res) {
 
     var idUsuario = req.params.idUsuario;
@@ -82,10 +65,27 @@ function obterMediaAcertosGeral(req, res) {
     });
 }
 
+function obterMediaAcertosUsuario(req, res) {
+
+    var idUsuario = req.params.idUsuario;
+
+    medidaModel.obterMediaAcertosUsuario(idUsuario).then(function (resultado) {
+        if (resultado.length > 0) {
+            res.status(200).json(resultado);
+        } else {
+            res.status(204).send("Nenhum resultado encontrado!")
+        }
+    }).catch(function (erro) {
+        console.log(erro);
+        console.log("Houve um erro ao buscar as ultimas medidas.", erro.sqlMessage);
+        res.status(500).json(erro.sqlMessage);
+    });
+}
+
 module.exports = {
+    obterMediaAcertosUsuario,
     acertosUsuarios,
     obterMaiorPontuacao,
     qtdPessoasCadastradas,
-    graficoTodosAcertosUsuario,
     obterMediaAcertosGeral
 }

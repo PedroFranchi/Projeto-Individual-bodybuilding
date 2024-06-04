@@ -132,12 +132,15 @@ canvas {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  border-radius: 16px;
 }
 
 .mostrarGraficosMediaAcertosGeral {
   height: 40%;
   width: 90%;
   background-color: white;
+  border-radius: 16px;
 }
 
 .mostrarGraficosMediaAcertosUsuario{
@@ -146,6 +149,7 @@ canvas {
   background-color: white;
   display: flex;
   flex-direction: column;
+  border-radius: 16px;
 }
 
 .flexKpi {
@@ -153,7 +157,7 @@ canvas {
   padding: 5%;
   justify-content: space-between;
   flex-direction: column;
-  margin-right: 5%;
+  margin-right: 10%;
 }
 
 .graficos {
@@ -170,4 +174,8 @@ canvas {
   width: 100%;
   justify-content: center;
   align-items: center;
+}
+
+.resultadoKpi{
+  font-size: xx-large;
 }

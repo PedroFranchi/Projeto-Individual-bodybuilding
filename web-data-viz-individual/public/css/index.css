@@ -54,7 +54,7 @@ body {
 }
 
 .titulo {
-  color: red;
+  color: white;
   font-size: large;
 }
 
@@ -76,7 +76,7 @@ body {
 }
 
 .linkHeader {
-  color: red;
+  color: white;
   font-size: 12px;
   list-style: none;
   text-decoration: none;
@@ -146,6 +146,7 @@ section div.box h1 {
 .o_que_é_fisiculturismo {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   margin: 5%;
   color: white;
@@ -162,11 +163,13 @@ section div.box h1 {
   padding: 10%;
   justify-content: center;
   align-items: center;
+  width: 60%;
 }
 
 .texto p {
   display: flex;
   text-align: center;
+  font-size: larger;
 }
 
 
@@ -199,7 +202,7 @@ section div.box h1 {
   display: flex;
   align-items: center;
   flex-direction: row;
-  margin: 50px;
+  justify-content: center;
 }
 
 .conteudo_categorias img {
@@ -211,22 +214,6 @@ section div.box h1 {
   text-align: center;
   display: flex;
   padding: 5%;
-}
-
-#div_openBoryBuilding {
-  display: none;
-}
-
-#div_mensPhysique {
-  display: none;
-}
-
-#div_classicPhysique {
-  display: none;
-}
-
-#div_mrOlimpia {
-  display: flex;
 }
 
 /* Teste */
@@ -245,8 +232,8 @@ section div.box h1 {
 
 
 .card {
-  width: 500px;
-  height: 400px;
+  width: 600px;
+  height: 500px;
   border-radius: 30px;
   background: #212121;
   display: flex;
@@ -259,16 +246,18 @@ section div.box h1 {
   margin: auto;
   opacity: 0;
   transform: translateX(100%);
-  
+  font-size: larger;
 }
+
+
 
 .flexCard h1{
   color: red;
 }
 
 .cardAparecer {
-  width: 500px;
-  height: 400px;
+  width: 600px;
+  height: 500px;
   border-radius: 30px;
   background: #212121;
   display: flex;
@@ -281,11 +270,14 @@ section div.box h1 {
   margin: auto;
   animation-name: cardAnimacao1;
   animation-duration: 1.5s;
+  padding: 20px;
+  text-align: justify;
+  font-size: larger;
 }
 
 .card2 {
-  width: 500px;
-  height: 400px;
+  width: 600px;
+  height: 500px;
   border-radius: 30px;
   background: #212121;
   display: flex;
@@ -298,11 +290,12 @@ section div.box h1 {
   margin: auto;
   opacity: 0;
   transform: translateX(100%);
+  font-size: larger;
 }
 
 .card2Aparecer {
-  width: 500px;
-  height: 400px;
+  width: 600px;
+  height: 500px;
   border-radius: 30px;
   background: #212121;
   display: flex;
@@ -315,6 +308,9 @@ section div.box h1 {
   margin: auto;
   animation-name: cardAnimacao2;
   animation-duration: 1.5s;
+  padding: 20px;
+  text-align: justify;
+  font-size: larger;
 }
 
 
@@ -336,5 +332,11 @@ footer .headerImagem {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
 
+.titulosPaginas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }

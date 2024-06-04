@@ -24,12 +24,12 @@ router.get("/acertosUsuarios/:idUsuario", function (req, res) {
     medidaController.qtdPessoasCadastradas(req, res);
   })
 
-  router.get("/todosAcertosUsuario/:idUsuario", function (req, res) {
-    medidaController.graficoTodosAcertosUsuario(req, res);
-  })
-
   router.get("/obterMediaAcertosGeral", function (req, res) {
     medidaController.obterMediaAcertosGeral(req, res);
+  })
+
+  router.get("/mediaAcertoUsuario/:idUsuario", function (req, res) {
+    medidaController.obterMediaAcertosUsuario(req, res);
   })
 
 // router.get("/quiz/:idUsuario", function (req, res) {
