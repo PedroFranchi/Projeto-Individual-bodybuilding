@@ -83,7 +83,7 @@
 }
 
 .alternativas button:active {
-    background-color: red;
+    background-color: gray;
 }
 
 .botaoIniciar {
@@ -133,7 +133,7 @@
 }
 
 .header-left h1 {
-    color: red;
+    color: white;
 }
 
 .dash-header {
